@@ -25,13 +25,16 @@ public class UserFlowTests extends Base{
 		itemContainerPage.clickRandomItem();
 		itemPage.waitForAddToCartBtnToBeClickable();
 		itemPage.addItemToCart();
+		cartPage.validateNumberofItemAvailableInCart(1);
 		utils.navigateBack();
 		itemContainerPage.clickRandomItem();
 		itemPage.waitForAddToCartBtnToBeClickable();
 		itemPage.addItemToCart();
 		itemPage.goToCartPage();
 		cartPage.waitForCheckOutBtnClickable();
+		cartPage.validateNumberofItemAvailableInCart(2);
 		cartPage.removeTheLastItemFromCart();
+		cartPage.validateNumberofItemAvailableInCart(1);
 		cartPage.clickCheckOutBtn();
 		shippingPage.waitForEmailFieldClickable();
 		shippingPage.filloutEmailAndConfirmEmail();
