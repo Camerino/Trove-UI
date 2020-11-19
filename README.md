@@ -1,4 +1,4 @@
-# Trove-UI
+# Trove UI Test Framework
 
 This is a Java-Selenium based UI test Framework for Trove website. It is desigened with Page Object Model design pattern.
 
@@ -6,7 +6,8 @@ This is a Java-Selenium based UI test Framework for Trove website. It is desigen
 
 After cloning the repository, Java and Maven should be installed
 
-# Test Run
+#Test Run
+
 go to project directory with command line and run
 
 mvn clean test
