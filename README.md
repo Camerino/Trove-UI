@@ -10,7 +10,7 @@ Install Java and Maven. add java and Maven to system path
 
 Test Run:
 
-go to project directory with command line and run
+go to project directory with command line and run command:
 
 mvn clean test
 
@@ -21,8 +21,8 @@ Install Docker
 
 Test Run:
 
-go to project directory with command line and run
+go to project directory with command line and run commands:
 
-docker build -t trove . (include dot)
+docker build -t trove . (commands includes dot)
 
 docker run -it trove
