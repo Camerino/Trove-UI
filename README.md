@@ -24,4 +24,5 @@ Test Run:
 go to project directory with command line and run
 
 docker build -t trove . (include dot)
+
 docker run -it trove
