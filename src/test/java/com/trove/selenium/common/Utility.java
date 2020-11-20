@@ -18,7 +18,19 @@ public class Utility {
 	
 	public WebDriver startChromeBrowser() {
 		try {
-			System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+			String os = System.getProperty("os.name").toLowerCase();
+			System.out.println(os);
+
+			if(os.indexOf("windows") >=0) {
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/windows/chromedriver.exe");
+			}else if(os.indexOf("mac") >=0) {
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/mac/chromedriver");
+			}else if(os.indexOf("linux") >= 0) {
+				System.setProperty("webdriver.chrome.driver", "src/test/resources/linux/chromedriver");
+			}else {
+				throw new Exception("Chrome driver currently doesn't support this driver.");
+			}
+
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);

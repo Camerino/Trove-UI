@@ -1,8 +1,0 @@
-com\trove\selenium\common\Base.class
-com\trove\selenium\pages\ItemPage.class
-com\trove\selenium\pages\ItemContainerPage.class
-com\trove\selenium\common\Utility.class
-com\trove\selenium\pages\UsedPage.class
-com\trove\selenium\pages\ShippingPage.class
-com\trove\selenium\tests\UserFlowTests.class
-com\trove\selenium\pages\CartPage.class
